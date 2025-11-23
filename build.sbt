@@ -20,6 +20,7 @@ lazy val server = (project in file("."))
   .settings(
     name         := "typelevel-rite-of-passage",
     scalaVersion := scala3Version,
+    scalacOptions += "-no-indent",
     organization := "com.rite",
     libraryDependencies ++= Seq(
       "org.typelevel"         %% "cats-effect"         % catsEffectVersion,
